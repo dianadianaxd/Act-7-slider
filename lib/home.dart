@@ -16,8 +16,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
-        buttonBackgroundColor: Colors.cyan,
-        color: Colors.cyan,
+        buttonBackgroundColor: Colors.green,
+        color: Colors.green,
         animationDuration: const Duration(milliseconds: 300),
         items: const <Widget>[
           Icon(Icons.home, size: 26, color: Colors.white),
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
         },
       ),
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.green,
         title: const Text('Estefanía Sánchez 1195',
             style: TextStyle(color: Colors.white)),
       ),
@@ -48,12 +48,4 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-
-  CurvedNavigationBar(
-      {required Color backgroundColor,
-      required MaterialColor buttonBackgroundColor,
-      required MaterialColor color,
-      required Duration animationDuration,
-      required List<Widget> items,
-      required Null Function(dynamic index) onTap}) {}
 }
